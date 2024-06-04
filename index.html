@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to SignTranslate</h1>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Our Goal</h2>
+            <p>Welcome to SignTranslate, a website that translates sign language into English from images or videos. Upload your media and our machine learning model provides instant translations. Perfect for learners, communicators, and the curious, SignTranslate makes sign language accessible to everyone.</p>
+        </section>
+
+        <section id="machine-learning">
+            <h2>How Our Model Works</h2>
+            <p>Our model allows our site to recognize signs from images using algorithms trained on large datasets. When an image is uploaded, our model analyzes it, recognizes the signs, and provides a translation.</p>
+        </section>
+
+        <section id="actions">
+            <input type="file" id="uploadImageInput" accept="image/*" class="custom-file-input">
+            <button id="settingsBtn">Access Settings</button>
+            <button id="cameraBtn">Access Camera</button>
+            <button id="toggleResponseBtn">Toggle AI Response Variation</button>
+        </section>
+
+        <section id="uploaded-image" style="display:none;">
+            <h2>Uploaded Image</h2>
+            <img id="uploadedImage" src="#" alt="Uploaded Image">
+            <button id="deleteImageBtn">Delete Image</button>
+        </section>
+
+        <section id="camera" style="display:none;">
+            <h2>Camera Access</h2>
+            <video id="video" width="640" height="480" autoplay></video>
+            <button id="captureBtn">Capture Image</button>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </section>
+
+        <section id="settings" style="display:none;">
+            <h2>Homepage Settings</h2>
+            <label for="bgColor">Background Color:</label>
+            <input type="color" id="bgColor" name="bgColor">
+            <label for="textColor">Text Color:</label>
+            <input type="color" id="textColor" name="textColor">
+            <label for="fontSize">Font Size (in px):</label>
+            <input type="number" id="fontSize" name="fontSize" min="10" max="50" value="16">
+            <label for="width">Width (in %):</label>
+            <input type="number" id="width" name="width" min="50" max="100" value="100">
+            <label for="height">Height (in %):</label>
+            <input type="number" id="height" name="height" min="50" max="100" value="100">
+            <button id="applySettingsBtn">Apply</button>
+        </section>
+    </main>
+        <footer>
+        <p>2024</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
