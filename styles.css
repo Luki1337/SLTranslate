@@ -106,3 +106,24 @@ footer {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#prediction {
+    display: none;
+    margin: 20px 0;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#prediction:hover {
+    transform: translateY(-5px);
+}
+
+#defaultImage {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #3a3a3a; /* Neutral dark gray */
+    border-radius: 10px;
+    margin-top: 10px;
+}
