@@ -165,11 +165,7 @@ archive/
 
 runs/
 
-network.py
-
 Project.ipynb
-
-utils.py
 
 # compiled output
 /dist
