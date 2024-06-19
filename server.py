@@ -1,5 +1,5 @@
-
 from flask import Flask, request, jsonify
+from flask_cors import CORS, cross_origin
 from PIL import Image
 import io
 import os
@@ -7,11 +7,12 @@ import torch
 from torchvision import transforms
 import numpy as np
 import network
+
 app = Flask(__name__)
 
 # Ensure the images directory exists
-IMAGE_FOLDER = 'images'
-DEFAULT_IMAGE_FOLDER = 'default_images'
+IMAGE_FOLDER = "images"
+DEFAULT_IMAGE_FOLDER = "default_images"
 
 if not os.path.exists(IMAGE_FOLDER):
     os.makedirs(IMAGE_FOLDER)
@@ -48,13 +49,15 @@ model.eval()
 # Create a dictionary to map model outputs to letters
 output_to_letter = {i: chr(65 + i) for i in range(26)}
 
+CORS(app)
 
-@app.route('/classify-image', methods=['POST'])
+
+@app.route("/classify-image", methods=["POST"])
 def classify_image():
-    if 'image' not in request.files:
-        return jsonify({'error': 'No image uploaded'}), 400
+    if "image" not in request.files:
+        return jsonify({"error": "No image uploaded"}), 400
 
-    image_file = request.files['image']
+    image_file = request.files["image"]
     image = Image.open(io.BytesIO(image_file.read()))
 
     # Save the image locally
@@ -73,18 +76,16 @@ def classify_image():
         predicted_letter = output_to_letter[prediction_idx]
 
     # Load the corresponding default image
-    default_image_path = os.path.join(DEFAULT_IMAGE_FOLDER, f'{predicted_letter}.png')
+    default_image_path = os.path.join(DEFAULT_IMAGE_FOLDER, f"{predicted_letter}.png")
 
     # Ensure the default image exists
     if not os.path.exists(default_image_path):
-        return jsonify({'error': 'Default image not found'}), 404
+        return jsonify({"error": "Default image not found"}), 404
 
     # Return the classification and the default image
     print(predicted_letter)
-    return jsonify({
-        'classification': predicted_letter
-    })
+    return jsonify({"classification": predicted_letter}), 200
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(port=5000, debug=True)

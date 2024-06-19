@@ -1,129 +1,132 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
-    text-align: center;
-    transition: all 0.5s ease;
+font-family: 'Roboto', sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f0f0f0;
+color: #333;
+text-align: center;
+transition: all 0.5s ease;
 }
 
 header {
-    background-color: #3a3a3a; /* Neutral dark gray */
-    color: white;
-    padding: 2em 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+background-color: #3a3a3a; /* Neutral dark gray */
+color: white;
+padding: 2em 0;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+margin: 0;
+font-size: 2.5em;
 }
 
 main {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
+padding: 20px;
+max-width: 800px;
+margin: auto;
 }
 
 section {
-    margin: 20px 0;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+margin: 20px 0;
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
 }
 
-section:hover {
-    transform: translateY(-5px);
+section
+{
+transform: translateY(-5px);
 }
 
 button {
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    background-color: #3a3a3a; /* Neutral dark gray */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+padding: 10px 20px;
+margin: 10px;
+cursor: pointer;
+background-color: #3a3a3a; /* Neutral dark gray */
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 1em;
+transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #5a5a5a; /* Slightly lighter gray */
+button
+{
+background-color: #5a5a5a; /* Slightly lighter gray */
 }
 
 #settings, #camera, #uploaded-image {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+background-color: #f9f9f9;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 label {
-    display: block;
-    margin: 10px 0 5px;
+display: block;
+margin: 10px 0 5px;
 }
 
 input[type="color"], input[type="number"], .custom-file-input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+width: 100%;
+box-sizing: border-box;
 }
 
 .custom-file-input {
-    padding: 10px 15px;
-    background-color: white;
-    border: 2px dashed #3a3a3a; /* Neutral dark gray */
-    text-align: center;
-    cursor: pointer;
+padding: 10px 15px;
+background-color: white;
+border: 2px dashed #3a3a3a; /* Neutral dark gray */
+text-align: center;
+cursor: pointer;
 }
 
 video {
-    border: 2px solid #3a3a3a; /* Neutral dark gray */
-    border-radius: 10px;
-    margin: 10px 0;
+border: 2px solid #3a3a3a; /* Neutral dark gray */
+border-radius: 10px;
+margin: 10px 0;
 }
 
 #uploadedImage {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #3a3a3a; /* Neutral dark gray */
-    border-radius: 10px;
-    margin-top: 10px;
+max-width: 100%;
+height: auto;
+border: 2px solid #3a3a3a; /* Neutral dark gray */
+border-radius: 10px;
+margin-top: 10px;
 }
 
 footer {
-    background-color: #3a3a3a; /* Neutral dark gray */
-    color: white;
-    padding: 1em 0;
-    margin-top: 20px;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+background-color: #3a3a3a; /* Neutral dark gray */
+color: white;
+padding: 1em 0;
+margin-top: 20px;
+box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #prediction {
-    display: none;
-    margin: 20px 0;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+display: none;
+margin: 20px 0;
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
 }
 
-#prediction:hover {
-    transform: translateY(-5px);
+#prediction
+{
+transform: translateY(-5px);
 }
 
 #defaultImage {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #3a3a3a; /* Neutral dark gray */
-    border-radius: 10px;
-    margin-top: 10px;
+max-width: 100%;
+height: auto;
+border: 2px solid #3a3a3a; /* Neutral dark gray */
+border-radius: 10px;
+margin-top: 10px;
 }

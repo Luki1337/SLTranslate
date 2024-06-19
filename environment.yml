@@ -2,16 +2,17 @@ name: SignTranslate
 channels:
   - pytorch
   - nvidia
+  - conda-forge
   - defaults
 dependencies:
-  - _libgcc_mutex=0.1=main
-  - _openmp_mutex=5.1=1_gnu
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
   - blas=1.0=mkl
   - blinker=1.6.2=py310h06a4308_0
   - brotli-python=1.0.9=py310h6a678d5_8
   - bzip2=1.0.8=h5eee18b_6
-  - ca-certificates=2024.3.11=h06a4308_0
-  - certifi=2024.6.2=py310h06a4308_0
+  - ca-certificates=2024.6.2=hbcca054_0
+  - certifi=2024.6.2=pyhd8ed1ab_0
   - charset-normalizer=2.0.4=pyhd3eb1b0_0
   - click=8.1.7=py310h06a4308_0
   - cuda-cudart=12.1.105=0
@@ -25,6 +26,7 @@ dependencies:
   - cudatoolkit=11.8.0=h6a678d5_0
   - filelock=3.13.1=py310h06a4308_0
   - flask=3.0.3=py310h06a4308_0
+  - flask-cors=4.0.0=pyhd8ed1ab_0
   - freetype=2.12.1=h4a9f257_0
   - gmp=6.2.1=h295c915_3
   - gmpy2=2.1.2=py310heeb90bb_0
@@ -44,8 +46,8 @@ dependencies:
   - libcusparse=12.0.2.55=0
   - libdeflate=1.17=h5eee18b_1
   - libffi=3.4.4=h6a678d5_1
-  - libgcc-ng=11.2.0=h1234567_1
-  - libgomp=11.2.0=h1234567_1
+  - libgcc-ng=13.2.0=h77fa898_10
+  - libgomp=13.2.0=h77fa898_10
   - libnpp=12.0.2.50=0
   - libnvjitlink=12.1.105=0
   - libnvjpeg=12.1.1.14=0
@@ -69,7 +71,7 @@ dependencies:
   - numpy=1.26.4=py310h5f9d8c6_0
   - numpy-base=1.26.4=py310hb5e798b_0
   - openjpeg=2.4.0=h3ad879b_0
-  - openssl=3.0.14=h5eee18b_0
+  - openssl=3.3.1=h4ab18f5_0
   - pillow=10.3.0=py310h5eee18b_0
   - pip=24.0=py310h06a4308_0
   - pysocks=1.7.1=py310h06a4308_0
@@ -81,6 +83,7 @@ dependencies:
   - readline=8.2=h5eee18b_0
   - requests=2.32.2=py310h06a4308_0
   - setuptools=69.5.1=py310h06a4308_0
+  - six=1.16.0=pyh6c4a22f_0
   - sqlite=3.45.3=h5eee18b_0
   - sympy=1.12=py310h06a4308_0
   - tbb=2021.8.0=hdb19cb5_0
