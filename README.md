@@ -56,8 +56,4 @@ The backend of SLTranslate is built using Python (Flask) and requires a specific
 ## Additional Notes 
 
 Ensure that ports 3000 for the frontend and 5000 for the backend are free.
-    
-
-    
-## Simple usage
 
